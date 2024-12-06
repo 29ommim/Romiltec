@@ -33,7 +33,7 @@ Route::get('/supervisor', [ExamUserController::class, 'index'])->middleware([Sup
 Route::post('/supervisor', [ExamUserController::class, 'store'])->middleware([SupervisorMiddleware::class])->name('examuser.store');
 
 Route::get('/exams', [ExamPublicController::class, 'show'])->name('showall');
-Route::post('/exams', [ExamPublicController::class, 'store'])->name('examuser.store');
+
 
 
 // Route per il logout
